@@ -1,5 +1,6 @@
 {
     "name": "melsaka/voteable",
+    "description": "A Laravel package that allows you to easily implement a voting system in your Laravel applications.",
     "type": "library",
     "license": "MIT",
     "autoload": {
@@ -10,9 +11,22 @@
     "authors": [
         {
             "name": "elsaka",
-            "email": "sakaz8050@gmail.com"
+            "email": "sakaz8050@gmail.com",
+            "homepage": "https://github.com/melsaka",
+            "role": "Developer"
         }
     ],
+    "require": {
+        "php": "^7.3|^8.0",
+        "laravel/framework": "^8.75"
+    },
     "minimum-stability": "dev",
-    "require": {}
+    "prefer-stable": true,
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Melsaka\\Voteable\\VoteableServiceProvider"
+            ]
+        }
+    }
 }
